@@ -35,7 +35,7 @@ const Home = () => {
       <StatusBar style="light"/>
       {
         users.length>0?(
-        <ChatList users={users}/>
+        <ChatList currentUser={user} users={users}/>
       ):(
           <View style={{display:'flex', alignItems:"center",marginTop:100}}>
             <Loading size={100}/>

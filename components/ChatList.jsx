@@ -3,7 +3,7 @@ import React from "react";
 import ChatItem from "./ChatItem";
 import { useRouter } from "expo-router";
 
-const ChatList = ({ users }) => {
+const ChatList = ({ users, currentUser }) => {
 
     const router=useRouter()
     
@@ -20,6 +20,7 @@ const ChatList = ({ users }) => {
             index={index}
             noBorder={index + 1 == users.length}
             router={router}
+            currentUser={currentUser}
           />
         )}
       />
