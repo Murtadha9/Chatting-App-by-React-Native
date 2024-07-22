@@ -19,7 +19,7 @@ export const MeniItem = ({ text, action, value, icon }) => {
           paddingVertical:5
         }}
       >
-        <Text style={{fontWeight:'bold'}}>{text}</Text>
+        <Text style={{fontWeight:'bold', color:'white'}}>{text}</Text>
         <Text>{icon}</Text>
       </View>
     </MenuOption>

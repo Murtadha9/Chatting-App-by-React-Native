@@ -4,10 +4,12 @@ import { formatTime } from "../Utilis/common";
 
 const MessageItem = ({ message, currentUser }) => {
 
-    const renderTime=()=>{
-        if(message){
-            let date=message?.createdAt
-          return formatTime(new Date(date?.seconds * 1000))
+    const renderTime = () => {
+        if (message?.createdAt?.seconds) {
+            let date = new Date(message.createdAt.seconds * 1000);
+            return formatTime(date);
+        } else {
+            return ''; // Return an empty string if message or createdAt is not defined
         }
     }
 
@@ -32,7 +34,7 @@ const MessageItem = ({ message, currentUser }) => {
               alignSelf: "flex-end",
               padding: 10,
               borderRadius: 20,
-              backgroundColor: "gray",
+              backgroundColor: "#FFB4C2",
               justifyContent:'space-between',
               alignItems:'center',
               gap:20
@@ -57,7 +59,7 @@ const MessageItem = ({ message, currentUser }) => {
             alignSelf: "flex-start",
             padding: 10,
             paddingHorizontal: 10,
-            backgroundColor: "pink",
+            backgroundColor: "#FDFFD2",
             borderRadius: 20,
             alignItems:'center',
             gap:20

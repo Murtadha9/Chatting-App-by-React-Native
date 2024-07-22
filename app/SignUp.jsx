@@ -88,7 +88,7 @@ const SignUp = () => {
     <CustomKeyboard>
       <View style={{ paddingTop: 30, alignItems: "center" }}>
         <Image
-          source={require("./../assets/images/signup.png")}
+          source={require("./../assets/images/signup2.webp")}
           style={{ width: 250, height: 250, objectFit: "contain" }}
         />
       </View>
@@ -107,7 +107,7 @@ const SignUp = () => {
             alignItems: "center",
             height: 50,
             padding: 5,
-            backgroundColor: "lightgray",
+            backgroundColor: "#F3F4F3",
             borderRadius: 15,
             marginTop: 20,
             paddingLeft: 20,
@@ -128,7 +128,7 @@ const SignUp = () => {
             alignItems: "center",
             height: 50,
             padding: 5,
-            backgroundColor: "lightgray",
+            backgroundColor: "#F3F4F3",
             borderRadius: 15,
             marginTop: 20,
             paddingLeft: 20,
@@ -149,7 +149,7 @@ const SignUp = () => {
             alignItems: "center",
             height: 50,
             padding: 5,
-            backgroundColor: "lightgray",
+            backgroundColor: "#F3F4F3",
             borderRadius: 15,
             marginTop: 20,
             paddingLeft: 20,
@@ -188,7 +188,7 @@ const SignUp = () => {
                 marginTop: 20,
               }}
             >
-              <Ionicons name="image" size={50} color="pink" />
+              <Ionicons name="image" size={50} color="#FF7D5E" />
               <Text style={{ fontWeight: "bold" }}>Pick Image Profile</Text>
             </View>
           )}
@@ -202,7 +202,7 @@ const SignUp = () => {
           <TouchableOpacity
             onPress={handleRegister}
             style={{
-              backgroundColor: "cyan",
+              backgroundColor: "#FF7D5E",
               padding: 10,
               borderRadius: 15,
               alignItems: "center",
@@ -226,7 +226,7 @@ const SignUp = () => {
             Aleardy have one ?{" "}
           </Text>
           <TouchableOpacity onPress={() => router.push("SignIn")}>
-            <Text style={{ fontSize: 16, fontWeight: "bold", color: "cyan" }}>
+            <Text style={{ fontSize: 16, fontWeight: "bold", color: "#FF7D5E" }}>
               Sign In
             </Text>
           </TouchableOpacity>

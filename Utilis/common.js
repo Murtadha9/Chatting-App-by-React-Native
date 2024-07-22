@@ -21,18 +21,25 @@ export const formatDate=date=>{
 
 }
 
-export const formatTime = date => {
-  const hours = date.getHours(); // Get the hours
+
+export const formatTime = (date) => {
+  let hours = date.getHours(); // Get the hours
   const minutes = date.getMinutes(); // Get the minutes
+
+  // Determine AM or PM suffix
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert to 12-hour format
+  hours = hours % 12;
+  hours = hours ? hours : 12; // The hour '0' should be '12'
 
   // Format hours and minutes to ensure they are two digits
   const formattedHours = hours < 10 ? `0${hours}` : hours;
   const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
 
-  const formattedTime = `${formattedHours}:${formattedMinutes}`;
+  const formattedTime = `${formattedHours}:${formattedMinutes} ${ampm}`;
   return formattedTime;
 }
-
 
 
 

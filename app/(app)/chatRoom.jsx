@@ -105,13 +105,11 @@ const chatRoom = () => {
     }
   }
 
- 
-
   return (
     <CustomKeyboard inChat={true}>
-      <View style={{ display: "flex", flex: 1, backgroundColor: "white" }}>
+      <View style={{ display: "flex", flex: 1,backgroundColor:'#F3F4F3' }}>
         <StatusBar style="dark" />
-        <ChatRoomHeader user={item} router={router} />
+        <ChatRoomHeader secondUser={item} router={router} />
 
         <View>
           <View style={{ display: "flex", height: "100%" }}>
@@ -153,13 +151,13 @@ const chatRoom = () => {
                   <TouchableOpacity
                   onPress={handleSendMessage}
                     style={{
-                      backgroundColor: "gray",
+                      backgroundColor: "#667BC6",
                       padding: 10,
                       margin: 5,
                       borderRadius: 99,
                     }}
                   >
-                    <FontAwesome name="send" size={24} color="black" />
+                    <FontAwesome name="send" size={24} color="white" />
                   </TouchableOpacity>
                 </View>
               </View>

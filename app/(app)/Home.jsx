@@ -5,6 +5,7 @@ import ChatList from '../../components/ChatList'
 import Loading from '../../components/Loading'
 import { getDocs, query, where } from 'firebase/firestore'
 import { usersRef } from '../../Utilis/FirebaseConfig'
+import CustomKeyboard from '../../components/CustomKeyboard'
 
 const Home = () => {
 
@@ -31,7 +32,8 @@ const Home = () => {
   }
 
   return (
-    <View style={{flex:1, backgroundColor:'white'}}>
+    <>
+      <View style={{flex:1, backgroundColor:'#F3F4F3'}}>
       <StatusBar style="light"/>
       {
         users.length>0?(
@@ -43,6 +45,8 @@ const Home = () => {
         )
       }
     </View>
+    </>
+    
   )
 }
 

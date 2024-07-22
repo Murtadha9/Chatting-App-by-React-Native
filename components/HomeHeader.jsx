@@ -34,7 +34,7 @@ const HomeHeader = () => {
         justifyContent: "space-between",
         alignItems: "center",
         paddingHorizontal: 10,
-        backgroundColor: "silver",
+        backgroundColor: "#EF5A6F",
         paddingBottom: 20,
         borderBottomLeftRadius: 25,
         borderBottomRightRadius: 25,
@@ -66,7 +66,7 @@ const HomeHeader = () => {
                 borderCurve:'continuous',
                 marginTop:40,
                 marginLeft:-30,
-                backgroundColor:'white',
+                backgroundColor:'#536493',
                 shadowOpacity:0.5,
                 shadowOffset:{width:0,height:0},
                 width:160
@@ -76,14 +76,14 @@ const HomeHeader = () => {
               text="Profile"
               action={handleProfile}
               value={null}
-              icon={<Ionicons name="person" size={24} color="black" />}
+              icon={<Ionicons name="person" size={24} color="white" />}
             />
             <View style={{width:'100%', backgroundColor:'gray', padding:0.5 }}/>
             <MeniItem
               text="SignOut"
               action={handleLogout}
               value={null}
-              icon={<MaterialCommunityIcons name="logout" size={24} color="black" />}
+              icon={<MaterialCommunityIcons name="logout" size={24} color="white" />}
             />
           </MenuOptions>
         </Menu>
